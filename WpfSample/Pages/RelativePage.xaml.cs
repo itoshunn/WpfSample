@@ -12,24 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfSample.Pages;
 
-namespace WpfSample
+namespace WpfSample.Pages
 {
     /// <summary>
-    /// MainWindow.xaml の相互作用ロジック
+    /// RelativePage.xaml の相互作用ロジック
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class RelativePage : Page
     {
-        public MainWindow()
+        public RelativePage()
         {
             InitializeComponent();
-        }
-
-        private void open_Click(object sender, RoutedEventArgs e)
-        {
-            RelativeWindow window = new RelativeWindow();
-            window.Show();
         }
     }
 }
