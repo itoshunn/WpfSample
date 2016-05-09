@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfSample"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow"
+        Height="350"
+        Width="525">
+    <DockPanel>
+        <WrapPanel x:Name="wp" DockPanel.Dock="Top">
+            <TextBlock Text="color"/>
+            <TextBox Background="Aqua" Text="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type WrapPanel}}, Path=Margin}"/>
+            <Button DockPanel.Dock="Top" x:Name="open" Content="open" Click="open_Click"/>
+        </WrapPanel>
+    </DockPanel>
 </Window>
