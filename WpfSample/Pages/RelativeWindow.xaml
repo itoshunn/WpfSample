@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="RelativeWindow" 
         Height="300" 
-        Width="300">
+        Width="300"
+        >
     <WrapPanel>
         <Frame Source="/WpfSample;component/Pages/RelativePage.xaml"/>
     </WrapPanel>
