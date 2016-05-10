@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfSample.Pages;
 
 namespace WpfSample
 {
@@ -24,12 +23,6 @@ namespace WpfSample
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void open_Click(object sender, RoutedEventArgs e)
-        {
-            RelativeWindow window = new RelativeWindow();
-            window.Show();
         }
     }
 }
